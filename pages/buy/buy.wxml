@@ -1,0 +1,172 @@
+<!--pages/buy/buy.wxml-->
+<!--index.wxml-->
+<view class="container">
+  <view class="banner">
+    <swiper
+      indicator-dots="{{true}}"
+      autoplay="{{true}}"
+      interval="{{5000}}"
+      duration="{{1000}}"
+      circular="{{true}}"
+    >
+      <swiper-item>
+        <image style="width: 710rpx; height: 258rpx; display: inline-block; box-sizing: border-box" src="https://dummyimage.com/1400x500/cccccc/ffffff.png&text=Test1" mode="aspectFit" />
+      </swiper-item>
+      <swiper-item>
+        <image style="width: 710rpx; height: 258rpx; display: inline-block; box-sizing: border-box" src="https://dummyimage.com/1400x500/cccccc/ffffff.png&text=Test2" mode="aspectFit" />
+      </swiper-item>
+      <swiper-item>
+        <image style="width: 710rpx; height: 258rpx; display: inline-block; box-sizing: border-box" src="https://dummyimage.com/1400x500/cccccc/ffffff.png&text=Test3" mode="aspectFit" />
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="category">
+    <view
+      class="category-item"
+      wx:for="{{categories}}"
+      wx:key="category"
+      bindtap="goCategory"
+      data-id="{{index}}"
+    >
+      <image src="{{item.image}}" />
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+
+  <view class="products">
+    <view class="title">
+      <text>热销产品</text>
+    </view>
+    <view class="product-list">
+    
+      <view class="product-item">
+        <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+1" mode="aspectFit" />
+          <view class="info">
+            <text class="name">Product 1</text>
+            <text class="price">$10</text>
+          </view>
+      </view>
+      <view class="product-item">
+       <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+2" mode="aspectFit" />
+          <view class="info">
+            <text class="name">Product 2</text>
+            <text class="price">$15</text>
+          </view>
+      </view>
+      <view class="product-item">
+        <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+3" mode="aspectFit" />
+          <view class="info">
+            <text class="name">Product 3</text>
+            <text class="price">$20</text>
+          </view>
+        </view>
+      <view class="product-item">
+         <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+4" mode="aspectFit" />
+          <view class="info">
+           <text class="name">Product 4</text>
+           <text class="price">$25</text>
+          </view>
+      </view>
+      <view class="product-item">
+         <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+5" mode="aspectFit" />
+          <view class="info">
+           <text class="name">Product 5</text>
+           <text class="price">$25</text>
+          </view>
+      </view>
+      <view class="product-item">
+         <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+6" mode="aspectFit" />
+          <view class="info">
+           <text class="name">Product 6</text>
+           <text class="price">$25</text>
+          </view>
+      </view>
+      <view class="product-item">
+         <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+7" mode="aspectFit" />
+          <view class="info">
+           <text class="name">Product 7</text>
+           <text class="price">$25</text>
+          </view>
+      </view>
+      <view class="product-item">
+         <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+8" mode="aspectFit" />
+          <view class="info">
+           <text class="name">Product 8</text>
+           <text class="price">$25</text>
+          </view>
+      </view>
+      <view class="product-item">
+         <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+9" mode="aspectFit" />
+          <view class="info">
+           <text class="name">Product 9</text>
+           <text class="price">$25</text>
+          </view>
+      </view>
+      <view class="product-item">
+         <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+10" mode="aspectFit" />
+          <view class="info">
+           <text class="name">Product 10</text>
+           <text class="price">$25</text>
+          </view>
+      </view>
+      <view class="product-item">
+         <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+11" mode="aspectFit" />
+          <view class="info">
+           <text class="name">Product 11</text>
+           <text class="price">$25</text>
+          </view>
+      </view>
+      <view class="product-item">
+         <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+12" mode="aspectFit" />
+          <view class="info">
+           <text class="name">Product 12</text>
+           <text class="price">$25</text>
+          </view>
+      </view>
+      <view class="product-item">
+         <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+13" mode="aspectFit" />
+          <view class="info">
+           <text class="name">Product 13</text>
+           <text class="price">$25</text>
+          </view>
+      </view>
+      <view class="product-item">
+         <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+14" mode="aspectFit" />
+          <view class="info">
+           <text class="name">Product 14</text>
+           <text class="price">$25</text>
+          </view>
+      </view>
+      <view class="product-item">
+         <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+15" mode="aspectFit" />
+          <view class="info">
+           <text class="name">Product 15</text>
+           <text class="price">$25</text>
+          </view>
+      </view>
+      <view class="product-item">
+         <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+16" mode="aspectFit" />
+          <view class="info">
+           <text class="name">Product 16</text>
+           <text class="price">$25</text>
+          </view>
+      </view>
+      <view class="product-item">
+         <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+17" mode="aspectFit" />
+          <view class="info">
+           <text class="name">Product 17</text>
+           <text class="price">$25</text>
+          </view>
+      </view>
+      <view class="product-item">
+         <image src="https://dummyimage.com/400x400/cccccc/ffffff.png&text=Product+18" mode="aspectFit" />
+          <view class="info">
+           <text class="name">Product 18</text>
+           <text class="price">$25</text>
+          </view>
+      </view>
+    </view>
+  </view>
+</view>
+

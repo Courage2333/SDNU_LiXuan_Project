@@ -1,0 +1,110 @@
+<!-- index.wxml -->
+
+<view class="container">
+  <view class="header">
+    <navigator url="/pages/loading/loding">
+      <text class="title">寻找队友</text>
+    </navigator>
+  </view>
+  <view class="content"></view>
+  <view class="team-list">
+    <view class="team-item">
+      <image class="avatar" src="https://dummyimage.com/100x100/cccccc/ffffff.png&text=Avatar" mode="aspectFit" />
+      <view class="info">
+        <text class="name">Team 1</text>
+        <text class="description">Description for Team 1</text>
+      </view>
+      <view class="btn-join" >
+        <navigator url="/pages/loading/loding">
+         <text class="btn-text">加入</text>
+        </navigator>
+      </view>
+    </view>
+    <view class="team-item">
+      <image class="avatar" src="https://dummyimage.com/100x100/cccccc/ffffff.png&text=Avatar" mode="aspectFit" />
+      <view class="info">
+        <text class="name">Team 2</text>
+        <text class="description">Description for Team 2</text>
+      </view>
+      <view class="btn-join">
+        <navigator url="/pages/loading/loding">
+         <text class="btn-text">加入</text>
+        </navigator>
+      </view>
+    </view>
+    <view class="team-item">
+      <image class="avatar" src="https://dummyimage.com/100x100/cccccc/ffffff.png&text=Avatar" mode="aspectFit" />
+      <view class="info">
+        <text class="name">Team 3</text>
+        <text class="description">Description for Team 3</text>
+      </view>
+      <view class="btn-join">
+        <navigator url="/pages/loading/loding">
+         <text class="btn-text">加入</text>
+        </navigator>
+      </view>
+    </view>
+    <view class="team-item">
+      <image class="avatar" src="https://dummyimage.com/100x100/cccccc/ffffff.png&text=Avatar" mode="aspectFit" />
+      <view class="info">
+        <text class="name">Team 4</text>
+        <text class="description">Description for Team 4</text>
+      </view>
+      <view class="btn-join">
+        <navigator url="/pages/loading/loding">
+         <text class="btn-text">加入</text>
+        </navigator>
+      </view>
+    </view>
+    <view class="team-item">
+      <image class="avatar" src="https://dummyimage.com/100x100/cccccc/ffffff.png&text=Avatar" mode="aspectFit" />
+      <view class="info">
+        <text class="name">Team 5</text>
+        <text class="description">Description for Team 5</text>
+      </view>
+      <view class="btn-join">
+        <navigator url="/pages/loading/loding">
+         <text class="btn-text">加入</text>
+        </navigator>
+      </view>
+    </view>
+    <view class="team-item">
+      <image class="avatar" src="https://dummyimage.com/100x100/cccccc/ffffff.png&text=Avatar" mode="aspectFit" />
+      <view class="info">
+        <text class="name">Team 6</text>
+        <text class="description">Description for Team 6</text>
+      </view>
+      <view class="btn-join">
+        <navigator url="/pages/loading/loding">
+         <text class="btn-text">加入</text>
+        </navigator>
+      </view>
+    </view>
+    <view class="team-item">
+      <image class="avatar" src="https://dummyimage.com/100x100/cccccc/ffffff.png&text=Avatar" mode="aspectFit" />
+      <view class="info">
+        <text class="name">Team 7</text>
+        <text class="description">Description for Team 7</text>
+      </view>
+      <view class="btn-join">
+        <navigator url="/pages/loading/loding">
+         <text class="btn-text">加入</text>
+        </navigator>
+      </view>
+    </view>
+    <view class="team-item">
+      <image class="avatar" src="https://dummyimage.com/100x100/cccccc/ffffff.png&text=Avatar" mode="aspectFit" />
+      <view class="info">
+        <text class="name">Team 8</text>
+        <text class="description">Description for Team 8</text>
+      </view>
+      <view class="btn-join">
+        <navigator url="/pages/loading/loding">
+         <text class="btn-text">加入</text>
+        </navigator>
+      </view>
+    </view>
+    <!-- more team items -->
+  </view>
+</view>
+

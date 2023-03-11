@@ -1,0 +1,53 @@
+<view class="recommendation-wrapper">
+  <view class="recommendation">
+    <text class="recommendation-title">推荐剧本</text>
+    <scroll-view scroll-y="true" class="scroll-view">
+      <view class="recommendation-list">
+        <block wx:for="{{recommendationList}}" wx:key="index">
+          <view class="recommendation-item" data-scriptid="{{item.id}}" bindtap="goToScriptDetail">
+            <image class="recommendation-image" src="{{item.coverUrl}}"></image>
+            <text class="recommendation-name">{{item.name}}</text>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+<!-- 这里是其他页面元素 -->
+
+
+<View class="swiper-container" indicator-dots="true" autoplay="true">
+  <swiper class="swiper" indicator-dots="true" autoplay="true">
+    <swiper-item>
+      <image src="../../images/banner1.jpg" class="swiper-img" />
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/banner1.jpg" class="swiper-img" />
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/banner1.jpg" class="swiper-img" />
+    </swiper-item>
+  </swiper>
+</View>
+<view>
+  <view class="center-text">
+  </view>
+  <!-- 底部导航栏 -->
+  <view class="tab-bar">
+    <view class="tab-item" bindtap="onTapTeam">
+      <image src="../../images/team.png"></image>
+      <text style="line-height: 100rpx;">组队</text>
+    </view>
+    <view class="tab-item" bindtap="onTapShop">
+      <image src="../../images/shop.png"></image>
+      <text style="line-height: 100rpx;">商店</text>
+    </view>
+    <view class="tab-item" bindtap="onTapMe">
+      <image src="../../images/me.png"></image>
+      <text style="line-height: 100rpx;">规则</text>
+    </view>
+  </view>
+</view>
+
+
